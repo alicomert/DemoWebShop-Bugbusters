@@ -2,6 +2,7 @@ package Utlity;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.bidi.log.Log;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 
@@ -25,20 +26,21 @@ public class Tools {
     }
     public static void LoginTest(){
         System.out.println("Login Test başladı");
-        driver.get("https://opencart.abstracta.us/index.php?route=account/login");
+        driver.get("https://demowebshop.tricentis.com/login");
         Tools.Bekle(2);
 
-        WebElement email=driver.findElement(By.id("input-email"));
-        email.sendKeys("testng1@gmail.com");
+        WebElement email=driver.findElement(By.id("Email"));
+        email.sendKeys("technostudy@protonmail.com");
 
-        WebElement password=driver.findElement(By.id("input-password"));
-        password.sendKeys("123qweasd");
+        WebElement password=driver.findElement(By.id("Password"));
+        password.sendKeys("7Nx*rp#*Rc3pS");
 
-        WebElement loginBtn=driver.findElement(By.xpath("//input[@type='submit']")); //By.cssSelector("[value='Login']")
+        WebElement loginBtn=driver.findElement(By.xpath("(//input[@type='submit'])[2]")); //By.cssSelector("[value='Login']")
         loginBtn.click();
+        WebElement LoginTest=driver.findElement(By.xpath("(//div//li/a)[1]")); //By.cssSelector("[value='Login']")
 
-        wait.until(ExpectedConditions.titleIs("My Account"));
-        Assert.assertTrue(driver.getTitle().equals("My Account"));
+        wait.until(ExpectedConditions.titleIs("Demo Web Shop"));
+        Assert.assertTrue(LoginTest.getText().contains("technostudy@protonmail.com"));
         System.out.println("Login Test bitti");
     }
 }
