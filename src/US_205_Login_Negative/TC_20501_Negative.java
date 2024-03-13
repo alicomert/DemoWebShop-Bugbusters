@@ -53,8 +53,6 @@ public class TC_20501_Negative extends BaseDriver {
         WebElement loginBtn=driver.findElement(By.xpath("(//input[@type='submit'])[2]")); //By.cssSelector("[value='Login']")
         loginBtn.click();
 
-
-
         WebElement cridantial=driver.findElement(By.xpath("//li[text()='The credentials provided are incorrect']"));
         Assert.assertTrue(cridantial.isDisplayed());
 
