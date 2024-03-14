@@ -15,9 +15,6 @@ public class TC_20101 extends BaseDriver {
         driver.get("https://demowebshop.tricentis.com/register");
         Tools.Bekle(3);
 
-        //WebElement register = driver.findElement(By.linkText("Register"));
-        //register.click();
-
         // Kişisel Bilgiler
         WebElement cinsiyet = driver.findElement(By.xpath("//input[@id='gender-female']"));
         cinsiyet.click();
