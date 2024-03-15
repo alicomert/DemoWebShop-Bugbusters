@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="my suit">
+
+    <test name="test1">
+        <classes>
+            <class name="US_201_Register.TC_20101"></class>
+        </classes>
+    </test>
+    <test name="test2">
+        <classes>
+            <class name="US_202_RegisterNegative.TC_20201_Negative"></class>
+        </classes>
+    </test>
+    <test name="test3">
+        <classes>
+            <class name="US_203_Logout.TC_20301_Positive"></class>
+        </classes>
+    </test>
+    <test name="test4">
+        <classes>
+            <class name="US_204_Login.TC_20401_Positive"></class>
+        </classes>
+    </test>
+    <test name="test5">
+        <classes>
+            <class name="US_205_Login_Negative.TC_20501_Negative"></class>
+        </classes>
+    </test>
+    <test name="test6">
+        <classes>
+            <class name="US_206_Siparis_Order.TC_20601_Positive"></class>
+        </classes>
+    </test>
+    <test name="test7">
+        <classes>
+            <class name="US_207_SurveyVoting.TC_20701_Positive"></class>
+        </classes>
+    </test>
+    <test name="test8">
+        <classes>
+            <class name="US_208_Coupon_GiftCard_NEGATIVE.TC_20801_Negative"></class>
+        </classes>
+    </test>
+    <test name="test9">
+        <classes>
+            <class name="US_209_View_Invoice.TC_20901_Positive"></class>
+        </classes>
+    </test>
+
+</suite>

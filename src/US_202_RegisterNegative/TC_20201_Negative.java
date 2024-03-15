@@ -1,4 +1,4 @@
-package US_202_Register_Negative;
+package US_202_RegisterNegative;
 
 import Utlity.Tools;
 import org.testng.annotations.Test;
